@@ -1,0 +1,500 @@
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#t.kind_id,=,7,mi_idx.info_type_id,>,99#283812
+title t##t.production_year,>,2004#1107925
+movie_info mi##mi.info_type_id,<,4#3624977
+title t,movie_companies mc#t.id=mc.movie_id#mc.company_id,<,27#134807
+movie_keyword mk##mk.keyword_id,<,55#54826
+title t,movie_companies mc,movie_info mi#t.id=mc.movie_id,t.id=mi.movie_id#t.production_year,>,1977,mc.company_id,>,71403,mi.info_type_id,<,4#1172762
+movie_keyword mk##mk.keyword_id,<,35049#4007119
+title t,movie_companies mc#t.id=mc.movie_id##2609129
+movie_info_idx mi_idx##mi_idx.info_type_id,>,99#920110
+title t,movie_info mi,movie_info_idx mi_idx#t.id=mi.movie_id,t.id=mi_idx.movie_id#mi.info_type_id,>,16,mi_idx.info_type_id,=,100#1603946
+title t,cast_info ci,movie_keyword mk#t.id=ci.movie_id,t.id=mk.movie_id#ci.person_id,=,890821,ci.role_id,=,1,mk.keyword_id,>,3624#2
+title t,movie_info mi,movie_keyword mk#t.id=mi.movie_id,t.id=mk.movie_id#t.production_year,>,2010,mi.info_type_id,<,16#5327671
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#t.production_year,<,2010,mi_idx.info_type_id,=,101#395802
+cast_info ci##ci.role_id,=,10#4323018
+title t,cast_info ci#t.id=ci.movie_id#t.kind_id,>,1#25847549
+movie_info mi##mi.info_type_id,=,3#1533909
+title t,movie_info mi,movie_info_idx mi_idx#t.id=mi.movie_id,t.id=mi_idx.movie_id#t.production_year,>,2003,mi.info_type_id,=,16#1604340
+movie_info mi##mi.info_type_id,>,16#2233850
+movie_info mi##mi.info_type_id,<,16#9565151
+movie_keyword mk##mk.keyword_id,=,18559#74
+title t,cast_info ci,movie_info_idx mi_idx#t.id=ci.movie_id,t.id=mi_idx.movie_id##40911741
+title t,movie_companies mc,movie_info mi#t.id=mc.movie_id,t.id=mi.movie_id#mi.info_type_id,<,4#7736878
+title t,movie_keyword mk#t.id=mk.movie_id#t.production_year,<,2007,mk.keyword_id,>,60992#183733
+title t,cast_info ci,movie_info mi#t.id=ci.movie_id,t.id=mi.movie_id#t.kind_id,=,7,t.production_year,>,1998,mi.info_type_id,<,15#20895495
+title t,cast_info ci,movie_info_idx mi_idx#t.id=ci.movie_id,t.id=mi_idx.movie_id#ci.person_id,>,761742,ci.role_id,=,3#3791245
+movie_info_idx mi_idx##mi_idx.info_type_id,<,101#919850
+title t,movie_companies mc#t.id=mc.movie_id#t.kind_id,>,1,t.production_year,<,2010,mc.company_type_id,<,2#504337
+title t,movie_info mi,movie_keyword mk#t.id=mi.movie_id,t.id=mk.movie_id#t.kind_id,<,7,t.production_year,>,2000#107263793
+title t,movie_keyword mk#t.id=mk.movie_id#mk.keyword_id,=,20450#123
+movie_info mi##mi.info_type_id,<,98#13963496
+title t,movie_companies mc,movie_info_idx mi_idx#t.id=mc.movie_id,t.id=mi_idx.movie_id#mc.company_type_id,=,2#1753403
+title t,movie_info mi#t.id=mi.movie_id#mi.info_type_id,>,98#543367
+title t,movie_info mi#t.id=mi.movie_id#t.production_year,<,1999#7212844
+title t,cast_info ci#t.id=ci.movie_id#t.kind_id,=,7,t.production_year,=,1992,ci.person_id,>,2415257,ci.role_id,<,3#13672
+movie_info_idx mi_idx##mi_idx.info_type_id,=,101#459925
+title t,movie_info mi#t.id=mi.movie_id#t.kind_id,=,1,t.production_year,=,1993,mi.info_type_id,>,3#56991
+movie_companies mc##mc.company_type_id,<,2#1274246
+title t,movie_keyword mk#t.id=mk.movie_id#mk.keyword_id,>,11868#1408364
+movie_companies mc##mc.company_id,>,312,mc.company_type_id,=,2#1231696
+movie_keyword mk##mk.keyword_id,>,5071#2200397
+movie_info_idx mi_idx##mi_idx.info_type_id,<,100#459925
+movie_info_idx mi_idx##mi_idx.info_type_id,=,100#459925
+title t,movie_keyword mk#t.id=mk.movie_id#t.production_year,<,2001#2529592
+cast_info ci##ci.person_id,>,1423339#21791610
+title t,movie_info mi,movie_keyword mk#t.id=mi.movie_id,t.id=mk.movie_id##235420417
+movie_info mi##mi.info_type_id,=,7#1401902
+movie_keyword mk##mk.keyword_id,<,3639#2036196
+title t,movie_info mi#t.id=mi.movie_id#t.production_year,=,1913,mi.info_type_id,=,7#39491
+title t##t.production_year,=,1993#26775
+title t##t.kind_id,>,3#1674098
+cast_info ci##ci.role_id,>,2#16121683
+title t,movie_info mi#t.id=mi.movie_id#mi.info_type_id,<,5#4923966
+title t,movie_keyword mk#t.id=mk.movie_id#t.kind_id,>,4,mk.keyword_id,=,5889#94
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#t.kind_id,=,7#425718
+cast_info ci##ci.role_id,=,3#4008037
+cast_info ci##ci.person_id,<,1700496#17216083
+title t,movie_companies mc#t.id=mc.movie_id#t.kind_id,>,1,t.production_year,<,2002#633430
+title t,movie_keyword mk#t.id=mk.movie_id#t.kind_id,=,7,t.production_year,>,2011#39663
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#t.kind_id,<,4,t.production_year,>,2001#354791
+movie_keyword mk##mk.keyword_id,>,2758#2807307
+movie_keyword mk##mk.keyword_id,>,430#3931052
+movie_keyword mk##mk.keyword_id,<,15518#3330897
+title t##t.production_year,<,2012#2224569
+title t##t.kind_id,=,7,t.production_year,>,2011#150659
+title t,movie_info mi,movie_keyword mk#t.id=mi.movie_id,t.id=mk.movie_id#mk.keyword_id,<,6258#125861267
+title t,movie_companies mc,movie_keyword mk#t.id=mc.movie_id,t.id=mk.movie_id#t.production_year,<,2011,mc.company_id,>,1700,mk.keyword_id,<,746#3469105
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#mi_idx.info_type_id,>,101#260
+title t,movie_companies mc,movie_keyword mk#t.id=mc.movie_id,t.id=mk.movie_id#t.production_year,<,2005,mk.keyword_id,>,807#19354547
+movie_companies mc##mc.company_id,<,95839#2328055
+title t##t.kind_id,=,1#662825
+title t,cast_info ci,movie_keyword mk#t.id=ci.movie_id,t.id=mk.movie_id#t.kind_id,<,7,t.production_year,=,2003,ci.person_id,<,3759296,ci.role_id,=,10#1679204
+cast_info ci##ci.role_id,=,1#12670688
+movie_keyword mk##mk.keyword_id,<,865#906014
+movie_keyword mk##mk.keyword_id,=,73864#15
+title t,cast_info ci#t.id=ci.movie_id#t.kind_id,<,7,t.production_year,<,2009,ci.person_id,<,1384789,ci.role_id,>,1#1189905
+title t,movie_info mi#t.id=mi.movie_id#t.production_year,=,2008#633134
+title t,cast_info ci,movie_info mi#t.id=ci.movie_id,t.id=mi.movie_id#t.production_year,<,1981,ci.person_id,>,3447372,ci.role_id,<,10,mi.info_type_id,>,3#1052679
+title t,cast_info ci,movie_info_idx mi_idx#t.id=ci.movie_id,t.id=mi_idx.movie_id#ci.role_id,>,3#14859070
+title t,cast_info ci#t.id=ci.movie_id##36244344
+title t,movie_info mi#t.id=mi.movie_id#t.production_year,<,2002#8116633
+title t,movie_info mi#t.id=mi.movie_id#t.production_year,>,2002#6306652
+movie_companies mc##mc.company_id,<,21,mc.company_type_id,<,2#109185
+title t,movie_companies mc,movie_keyword mk#t.id=mc.movie_id,t.id=mk.movie_id#t.kind_id,=,7,t.production_year,<,2013,mc.company_type_id,=,1#884682
+title t,movie_info mi#t.id=mi.movie_id#t.production_year,>,2010#1726523
+movie_info mi##mi.info_type_id,=,4#1298989
+title t,movie_keyword mk#t.id=mk.movie_id#t.kind_id,>,1,t.production_year,=,2011#69723
+title t##t.production_year,>,2010#391666
+title t,movie_info mi,movie_keyword mk#t.id=mi.movie_id,t.id=mk.movie_id#t.kind_id,=,7,t.production_year,<,1983,mi.info_type_id,=,18#102470
+title t,movie_companies mc,cast_info ci#t.id=mc.movie_id,t.id=ci.movie_id#t.production_year,>,1958#72667313
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#t.production_year,<,2011,mi_idx.info_type_id,<,101#832054
+title t,movie_companies mc,movie_info mi#t.id=mc.movie_id,t.id=mi.movie_id#t.kind_id,=,7,mc.company_type_id,>,1#3003702
+title t##t.production_year,<,1999#971188
+title t,movie_companies mc,movie_info_idx mi_idx#t.id=mc.movie_id,t.id=mi_idx.movie_id#mc.company_id,=,133,mc.company_type_id,=,1#1455
+title t,cast_info ci,movie_keyword mk#t.id=ci.movie_id,t.id=mk.movie_id#ci.person_id,>,3028889,mk.keyword_id,=,6079#1536
+movie_info mi##mi.info_type_id,<,18#12970088
+title t,movie_info mi,movie_info_idx mi_idx#t.id=mi.movie_id,t.id=mi_idx.movie_id#mi.info_type_id,=,3#1639327
+movie_info mi##mi.info_type_id,=,5#486554
+title t,movie_companies mc,movie_info_idx mi_idx#t.id=mc.movie_id,t.id=mi_idx.movie_id#t.kind_id,<,7,t.production_year,<,1995,mc.company_id,>,93251,mc.company_type_id,=,2#158257
+title t,cast_info ci,movie_keyword mk#t.id=ci.movie_id,t.id=mk.movie_id#ci.role_id,>,5,mk.keyword_id,>,21497#14287122
+title t,movie_info mi,movie_keyword mk#t.id=mi.movie_id,t.id=mk.movie_id#t.kind_id,=,7,t.production_year,>,2009,mi.info_type_id,<,73,mk.keyword_id,>,5346#546932
+title t,movie_keyword mk#t.id=mk.movie_id##4523930
+title t,cast_info ci,movie_info mi#t.id=ci.movie_id,t.id=mi.movie_id#t.kind_id,=,7,ci.person_id,<,2164700,ci.role_id,<,10,mi.info_type_id,<,17#42502059
+movie_info mi##mi.info_type_id,<,3#2091068
+movie_info mi##mi.info_type_id,>,1#14033580
+title t,movie_info mi,movie_keyword mk#t.id=mi.movie_id,t.id=mk.movie_id#mi.info_type_id,=,2,mk.keyword_id,>,11171#1429827
+title t##t.kind_id,>,4#1555864
+title t,movie_keyword mk#t.id=mk.movie_id#t.production_year,<,1928,mk.keyword_id,=,980#145
+title t,movie_info mi#t.id=mi.movie_id#t.kind_id,<,7#10872384
+title t,movie_companies mc#t.id=mc.movie_id#mc.company_id,>,74659#491374
+title t,movie_info mi#t.id=mi.movie_id#mi.info_type_id,<,2#802140
+title t,cast_info ci#t.id=ci.movie_id#t.production_year,<,1993,ci.person_id,<,1128988,ci.role_id,>,10#12889
+title t,movie_info mi,movie_keyword mk#t.id=mi.movie_id,t.id=mk.movie_id#t.production_year,=,2005,mi.info_type_id,>,18,mk.keyword_id,<,56#16846
+title t,movie_keyword mk#t.id=mk.movie_id#t.kind_id,=,1,t.production_year,<,1997,mk.keyword_id,>,24852#280053
+cast_info ci##ci.person_id,=,3532427#92
+title t,cast_info ci,movie_keyword mk#t.id=ci.movie_id,t.id=mk.movie_id##215765477
+title t,movie_companies mc,movie_keyword mk#t.id=mc.movie_id,t.id=mk.movie_id#t.kind_id,=,1,t.production_year,<,2012,mk.keyword_id,<,2909#10819315
+title t,movie_keyword mk#t.id=mk.movie_id#t.production_year,>,2011,mk.keyword_id,<,2021#45740
+title t,movie_info mi#t.id=mi.movie_id##14835720
+title t,movie_keyword mk#t.id=mk.movie_id#t.production_year,<,2010#4024094
+cast_info ci##ci.person_id,<,1018786,ci.role_id,=,8#466780
+title t,movie_info mi#t.id=mi.movie_id#t.production_year,<,2002,mi.info_type_id,<,16#5609385
+title t##t.production_year,>,1960#2203697
+title t,cast_info ci,movie_info_idx mi_idx#t.id=ci.movie_id,t.id=mi_idx.movie_id#mi_idx.info_type_id,<,101#27252990
+title t,movie_info_idx mi_idx,movie_keyword mk#t.id=mi_idx.movie_id,t.id=mk.movie_id#t.production_year,=,1985,mi_idx.info_type_id,<,101#79744
+title t,movie_keyword mk#t.id=mk.movie_id#mk.keyword_id,=,17222#2936
+movie_keyword mk##mk.keyword_id,<,5273#2351730
+title t,movie_companies mc,movie_keyword mk#t.id=mc.movie_id,t.id=mk.movie_id##34863638
+title t,movie_info_idx mi_idx,movie_keyword mk#t.id=mi_idx.movie_id,t.id=mk.movie_id#t.production_year,>,2001,mi_idx.info_type_id,=,100#1309629
+title t,movie_info_idx mi_idx,movie_keyword mk#t.id=mi_idx.movie_id,t.id=mk.movie_id#t.production_year,=,2012,mk.keyword_id,>,4841#108242
+title t,cast_info ci#t.id=ci.movie_id#ci.person_id,=,518069,ci.role_id,=,1#100
+title t,movie_companies mc,movie_keyword mk#t.id=mc.movie_id,t.id=mk.movie_id#t.kind_id,<,7,mc.company_id,>,11156,mk.keyword_id,=,1190#1542
+title t,movie_keyword mk#t.id=mk.movie_id#mk.keyword_id,>,1767#3167135
+title t##t.kind_id,=,1,t.production_year,=,2007#17772
+title t,movie_keyword mk#t.id=mk.movie_id#t.kind_id,<,4,t.production_year,=,2004,mk.keyword_id,<,1633#29806
+movie_info mi##mi.info_type_id,=,18#660923
+title t,movie_info_idx mi_idx,movie_keyword mk#t.id=mi_idx.movie_id,t.id=mk.movie_id#mi_idx.info_type_id,<,100#3461792
+title t,movie_keyword mk#t.id=mk.movie_id#t.kind_id,<,4,t.production_year,<,2003,mk.keyword_id,>,21949#408325
+title t,movie_companies mc,movie_keyword mk#t.id=mc.movie_id,t.id=mk.movie_id#t.production_year,>,2012#155657
+title t,movie_info mi,movie_info_idx mi_idx#t.id=mi.movie_id,t.id=mi_idx.movie_id#t.production_year,>,2001,mi.info_type_id,=,15#691283
+movie_keyword mk##mk.keyword_id,>,22322#822448
+title t,cast_info ci,movie_keyword mk#t.id=ci.movie_id,t.id=mk.movie_id#t.kind_id,<,7,mk.keyword_id,<,1046#40480986
+title t,cast_info ci#t.id=ci.movie_id#t.kind_id,<,7,t.production_year,>,2003#6385946
+movie_info mi##mi.info_type_id,<,15#8966694
+title t,movie_companies mc,movie_info mi#t.id=mc.movie_id,t.id=mi.movie_id#mc.company_id,<,176,mc.company_type_id,<,2#5170248
+title t,movie_keyword mk#t.id=mk.movie_id#mk.keyword_id,=,4333#6763
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#t.production_year,<,1971#227454
+title t,movie_info mi,movie_keyword mk#t.id=mi.movie_id,t.id=mk.movie_id#t.kind_id,<,7#228749970
+movie_companies mc##mc.company_type_id,=,1#1274246
+title t,movie_info_idx mi_idx,movie_keyword mk#t.id=mi_idx.movie_id,t.id=mk.movie_id#mk.keyword_id,>,394#9299243
+movie_info mi##mi.info_type_id,>,18#1204709
+title t,movie_info_idx mi_idx,movie_keyword mk#t.id=mi_idx.movie_id,t.id=mk.movie_id#t.kind_id,<,4#8583388
+title t,cast_info ci,movie_info_idx mi_idx#t.id=ci.movie_id,t.id=mi_idx.movie_id#ci.role_id,>,1,mi_idx.info_type_id,=,99#8828375
+title t,cast_info ci,movie_keyword mk#t.id=ci.movie_id,t.id=mk.movie_id#t.kind_id,>,4,ci.role_id,<,4#14868031
+title t,movie_info mi#t.id=mi.movie_id#t.kind_id,>,2,mi.info_type_id,>,3#4566302
+movie_keyword mk##mk.keyword_id,=,1002#4200
+title t##t.kind_id,>,1,t.production_year,=,1958#6736
+title t,cast_info ci,movie_info_idx mi_idx#t.id=ci.movie_id,t.id=mi_idx.movie_id#t.kind_id,=,7,t.production_year,<,1943,mi_idx.info_type_id,=,101#7
+movie_companies mc##mc.company_id,=,71881#62
+title t,movie_info mi#t.id=mi.movie_id#t.kind_id,=,1,t.production_year,=,2012#405218
+title t,movie_companies mc,movie_keyword mk#t.id=mc.movie_id,t.id=mk.movie_id#t.kind_id,=,4,t.production_year,<,2006#626759
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#t.production_year,>,1986#975233
+movie_keyword mk##mk.keyword_id,>,79391#113737
+movie_keyword mk##mk.keyword_id,<,562#681653
+title t,cast_info ci,movie_info mi#t.id=ci.movie_id,t.id=mi.movie_id#t.kind_id,=,7,ci.role_id,=,2#15835414
+title t##t.kind_id,=,7,t.production_year,>,2007#518327
+movie_keyword mk##mk.keyword_id,=,103168#2
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#t.kind_id,>,1#750135
+title t,movie_info_idx mi_idx,movie_keyword mk#t.id=mi_idx.movie_id,t.id=mk.movie_id#t.kind_id,=,7,t.production_year,>,1976,mi_idx.info_type_id,=,99#313045
+title t,cast_info ci#t.id=ci.movie_id#t.kind_id,=,1,ci.role_id,>,1#6584840
+title t##t.kind_id,=,4,t.production_year,=,2012#5186
+title t,movie_companies mc,cast_info ci#t.id=mc.movie_id,t.id=ci.movie_id#t.kind_id,=,1,t.production_year,>,2008#10284786
+movie_info mi##mi.info_type_id,=,105#121863
+movie_info_idx mi_idx##mi_idx.info_type_id,=,99#459925
+title t,movie_companies mc,movie_keyword mk#t.id=mc.movie_id,t.id=mk.movie_id#t.production_year,<,2011,mc.company_id,=,12929,mc.company_type_id,<,2,mk.keyword_id,<,3905#1136
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id##1380035
+title t,cast_info ci,movie_keyword mk#t.id=ci.movie_id,t.id=mk.movie_id#t.kind_id,<,7,t.production_year,>,2012,ci.role_id,>,2,mk.keyword_id,<,394#70355
+title t,cast_info ci,movie_info mi#t.id=ci.movie_id,t.id=mi.movie_id#t.kind_id,=,1,ci.role_id,>,2,mi.info_type_id,>,8#102251910
+cast_info ci##ci.person_id,=,642522,ci.role_id,<,8#101
+title t,cast_info ci,movie_info mi#t.id=ci.movie_id,t.id=mi.movie_id#t.production_year,=,2006,ci.role_id,>,2,mi.info_type_id,<,98#9832710
+movie_keyword mk##mk.keyword_id,=,15488#16
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#mi_idx.info_type_id,<,100#459925
+title t,movie_info mi#t.id=mi.movie_id#t.production_year,<,2012,mi.info_type_id,=,1#738107
+title t,cast_info ci,movie_info_idx mi_idx#t.id=ci.movie_id,t.id=mi_idx.movie_id#ci.person_id,>,95397,mi_idx.info_type_id,=,101#13274183
+title t,movie_info mi#t.id=mi.movie_id#t.kind_id,>,1,t.production_year,<,2004#3626990
+title t##t.kind_id,<,7,t.production_year,<,1984#334539
+title t,movie_companies mc#t.id=mc.movie_id#t.kind_id,=,4,t.production_year,=,1999#4270
+title t##t.kind_id,=,7,t.production_year,>,1913#1478439
+movie_companies mc##mc.company_id,>,69766,mc.company_type_id,<,2#1168
+cast_info ci##ci.person_id,>,3064628#5797038
+title t,movie_info mi,movie_info_idx mi_idx#t.id=mi.movie_id,t.id=mi_idx.movie_id#mi.info_type_id,>,3#17044721
+title t,movie_companies mc,movie_info mi#t.id=mc.movie_id,t.id=mi.movie_id#mc.company_id,>,11586,mc.company_type_id,<,2#14389731
+title t,movie_companies mc,cast_info ci#t.id=mc.movie_id,t.id=ci.movie_id#ci.person_id,<,584885,ci.role_id,<,3#9491177
+title t,cast_info ci,movie_info mi#t.id=ci.movie_id,t.id=mi.movie_id#t.production_year,<,1977,ci.role_id,=,1#38217971
+title t,movie_info mi#t.id=mi.movie_id#t.kind_id,<,4,t.production_year,<,2012#9155603
+title t,movie_keyword mk#t.id=mk.movie_id#t.kind_id,<,7,t.production_year,>,2009,mk.keyword_id,>,2130#234394
+title t,movie_info mi#t.id=mi.movie_id#t.production_year,>,2006,mi.info_type_id,<,16#2571838
+title t,movie_info_idx mi_idx,movie_keyword mk#t.id=mi_idx.movie_id,t.id=mk.movie_id#t.production_year,>,1981,mk.keyword_id,>,819#5865955
+title t,movie_companies mc,movie_keyword mk#t.id=mc.movie_id,t.id=mk.movie_id#mc.company_id,<,892,mk.keyword_id,<,52673#6005113
+title t##t.kind_id,=,2#90852
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#t.kind_id,=,7,mi_idx.info_type_id,=,100#141906
+title t##t.kind_id,=,1,t.production_year,=,2009#28104
+title t##t.kind_id,=,7,t.production_year,>,1988#1189548
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#t.kind_id,=,3,mi_idx.info_type_id,<,101#74098
+title t,movie_companies mc#t.id=mc.movie_id#t.kind_id,>,1,t.production_year,<,1986,mc.company_id,<,13251,mc.company_type_id,<,2#150504
+movie_info_idx mi_idx##mi_idx.info_type_id,>,101#260
+title t,cast_info ci,movie_info_idx mi_idx#t.id=ci.movie_id,t.id=mi_idx.movie_id#t.production_year,<,2013,ci.role_id,=,1,mi_idx.info_type_id,=,100#4745611
+title t,cast_info ci,movie_keyword mk#t.id=ci.movie_id,t.id=mk.movie_id#t.production_year,=,2006#10571939
+title t,movie_companies mc#t.id=mc.movie_id#mc.company_type_id,<,2#1274246
+cast_info ci##ci.person_id,=,2435219,ci.role_id,>,1#161
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#t.kind_id,=,7,t.production_year,<,2005#251721
+title t,movie_info mi,movie_info_idx mi_idx#t.id=mi.movie_id,t.id=mi_idx.movie_id#mi_idx.info_type_id,=,99#6930334
+title t,cast_info ci,movie_keyword mk#t.id=ci.movie_id,t.id=mk.movie_id#t.kind_id,<,7,t.production_year,<,2009,ci.role_id,<,11#160092835
+title t,movie_companies mc,movie_keyword mk#t.id=mc.movie_id,t.id=mk.movie_id#mc.company_id,>,13331,mk.keyword_id,=,115#8910
+title t,movie_companies mc,cast_info ci#t.id=mc.movie_id,t.id=ci.movie_id#t.kind_id,=,7,ci.person_id,>,2802940,ci.role_id,=,9#434403
+title t##t.production_year,=,2004#84593
+title t,cast_info ci#t.id=ci.movie_id#t.kind_id,=,7#21419885
+title t,movie_companies mc#t.id=mc.movie_id#t.production_year,>,2006,mc.company_id,<,190835,mc.company_type_id,=,1#328580
+title t,movie_info mi#t.id=mi.movie_id#mi.info_type_id,>,16#2233850
+cast_info ci##ci.role_id,=,4#2728943
+cast_info ci##ci.person_id,<,1404176,ci.role_id,>,3#2880385
+title t,cast_info ci#t.id=ci.movie_id#t.production_year,<,2004#17293665
+cast_info ci##ci.role_id,<,11#35928226
+title t,movie_info mi,movie_info_idx mi_idx#t.id=mi.movie_id,t.id=mi_idx.movie_id#t.kind_id,=,7,t.production_year,=,2008,mi.info_type_id,=,18#6237
+title t,movie_keyword mk#t.id=mk.movie_id#t.kind_id,=,7,t.production_year,<,1995#189906
+title t,movie_info mi#t.id=mi.movie_id#t.kind_id,<,7,t.production_year,=,1995,mi.info_type_id,>,1#125303
+title t,movie_info mi#t.id=mi.movie_id#t.kind_id,=,1#8301049
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#mi_idx.info_type_id,=,99#459925
+title t,cast_info ci#t.id=ci.movie_id#t.kind_id,=,7,t.production_year,<,2008#12808953
+movie_keyword mk##mk.keyword_id,>,74318#145378
+title t,cast_info ci,movie_keyword mk#t.id=ci.movie_id,t.id=mk.movie_id#t.production_year,<,1984,ci.role_id,=,2#8564908
+title t##t.production_year,=,1985#18391
+title t,cast_info ci,movie_info_idx mi_idx#t.id=ci.movie_id,t.id=mi_idx.movie_id#ci.person_id,=,3856403,ci.role_id,>,2,mi_idx.info_type_id,=,101#1
+movie_companies mc##mc.company_id,>,4834#1602754
+movie_keyword mk##mk.keyword_id,>,7634#1823955
+title t,movie_info mi#t.id=mi.movie_id#t.production_year,=,1998,mi.info_type_id,=,7#9968
+title t,movie_keyword mk#t.id=mk.movie_id#mk.keyword_id,>,5603#2118705
+title t,movie_keyword mk#t.id=mk.movie_id#t.kind_id,<,7,t.production_year,=,2008#160187
+title t,movie_info mi,movie_keyword mk#t.id=mi.movie_id,t.id=mk.movie_id#t.kind_id,<,4,t.production_year,>,2008,mk.keyword_id,=,3509#2846
+title t,cast_info ci#t.id=ci.movie_id#t.kind_id,<,7,t.production_year,=,1950,ci.person_id,>,2550841#11088
+movie_keyword mk##mk.keyword_id,=,14698#39
+title t,cast_info ci#t.id=ci.movie_id#ci.role_id,<,3#20122661
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#t.production_year,=,2013#14808
+title t,movie_info_idx mi_idx,movie_keyword mk#t.id=mi_idx.movie_id,t.id=mk.movie_id#t.kind_id,=,4#573531
+title t,cast_info ci,movie_info mi#t.id=ci.movie_id,t.id=mi.movie_id#t.production_year,=,1992,mi.info_type_id,>,9#3608536
+title t,movie_info mi,movie_keyword mk#t.id=mi.movie_id,t.id=mk.movie_id#mi.info_type_id,>,16#85267212
+movie_companies mc##mc.company_id,>,61606#622422
+title t,movie_info_idx mi_idx,movie_keyword mk#t.id=mi_idx.movie_id,t.id=mk.movie_id#t.kind_id,=,7,t.production_year,>,2006,mk.keyword_id,>,7316#205512
+title t,cast_info ci#t.id=ci.movie_id#t.kind_id,<,7,t.production_year,<,1972,ci.person_id,>,1463411#1459699
+cast_info ci##ci.person_id,<,453826#4684740
+cast_info ci##ci.person_id,<,3257186,ci.role_id,=,1#12670688
+title t,movie_info_idx mi_idx,movie_keyword mk#t.id=mi_idx.movie_id,t.id=mk.movie_id#t.kind_id,<,7,t.production_year,<,1994#4422321
+title t##t.kind_id,>,3,t.production_year,>,1985#1351187
+movie_info mi##mi.info_type_id,<,47#13669232
+title t,cast_info ci,movie_keyword mk#t.id=ci.movie_id,t.id=mk.movie_id#t.kind_id,<,7,mk.keyword_id,<,3660#85978887
+title t,movie_companies mc,movie_keyword mk#t.id=mc.movie_id,t.id=mk.movie_id#mc.company_id,>,11137,mc.company_type_id,=,2#6274794
+title t,movie_companies mc,movie_info_idx mi_idx#t.id=mc.movie_id,t.id=mi_idx.movie_id#t.kind_id,<,7,t.production_year,=,2005,mc.company_type_id,=,1#68337
+title t##t.production_year,=,1992#24917
+title t,cast_info ci#t.id=ci.movie_id#ci.person_id,=,318300,ci.role_id,<,9#3194
+title t##t.kind_id,<,7,t.production_year,<,2010#793943
+title t,cast_info ci#t.id=ci.movie_id#t.kind_id,<,7,ci.role_id,>,10#141265
+title t##t.kind_id,=,7#1543264
+title t##t.kind_id,<,7,t.production_year,>,2004#368246
+movie_keyword mk##mk.keyword_id,<,813#849012
+title t,movie_info mi,movie_info_idx mi_idx#t.id=mi.movie_id,t.id=mi_idx.movie_id#t.kind_id,<,7,mi.info_type_id,=,7#1434307
+movie_keyword mk##mk.keyword_id,=,3666#3052
+cast_info ci##ci.person_id,<,1445767,ci.role_id,<,3#10579467
+movie_info_idx mi_idx##mi_idx.info_type_id,>,100#460185
+title t,movie_keyword mk#t.id=mk.movie_id#t.kind_id,<,7,t.production_year,=,1983#36061
+movie_info mi##mi.info_type_id,>,2#12744652
+title t,cast_info ci,movie_info mi#t.id=ci.movie_id,t.id=mi.movie_id#ci.role_id,=,2,mi.info_type_id,>,15#33413872
+title t,movie_keyword mk#t.id=mk.movie_id#t.production_year,<,2011#4200438
+cast_info ci##ci.person_id,=,3374181,ci.role_id,>,2#1
+movie_info mi##mi.info_type_id,<,8#7286865
+title t,movie_info mi,movie_info_idx mi_idx#t.id=mi.movie_id,t.id=mi_idx.movie_id#mi.info_type_id,<,3#2200982
+title t,movie_companies mc,movie_keyword mk#t.id=mc.movie_id,t.id=mk.movie_id#mk.keyword_id,<,39603#31195171
+title t,movie_keyword mk#t.id=mk.movie_id#mk.keyword_id,>,486#3895751
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#t.kind_id,=,1,t.production_year,>,1905,mi_idx.info_type_id,=,101#207705
+movie_companies mc##mc.company_id,=,6061#25
+title t,movie_companies mc,movie_keyword mk#t.id=mc.movie_id,t.id=mk.movie_id#mk.keyword_id,>,5283#17298989
+movie_info mi##mi.info_type_id,>,13#5869026
+title t,movie_companies mc,cast_info ci#t.id=mc.movie_id,t.id=ci.movie_id#t.kind_id,=,1,t.production_year,>,1985,mc.company_id,>,78,mc.company_type_id,<,2,ci.person_id,>,502692#18492944
+title t,movie_companies mc#t.id=mc.movie_id#t.production_year,<,2006#1754914
+movie_keyword mk##mk.keyword_id,=,6226#1517
+title t,movie_keyword mk#t.id=mk.movie_id#mk.keyword_id,<,3302#1916587
+title t,movie_companies mc,movie_keyword mk#t.id=mc.movie_id,t.id=mk.movie_id#t.kind_id,=,1,t.production_year,<,2008,mc.company_type_id,<,2,mk.keyword_id,>,49177#1505733
+title t,movie_companies mc#t.id=mc.movie_id#mc.company_id,<,46#182418
+title t,movie_companies mc,movie_info mi#t.id=mc.movie_id,t.id=mi.movie_id##67371414
+movie_keyword mk##mk.keyword_id,>,335#4087742
+movie_info mi##mi.info_type_id,>,6#8950757
+title t,movie_info mi#t.id=mi.movie_id#t.kind_id,=,7,t.production_year,<,2002#2055671
+title t,movie_info_idx mi_idx,movie_keyword mk#t.id=mi_idx.movie_id,t.id=mk.movie_id#mi_idx.info_type_id,<,101,mk.keyword_id,<,7168#4021248
+title t,movie_info_idx mi_idx,movie_keyword mk#t.id=mi_idx.movie_id,t.id=mk.movie_id#t.kind_id,<,7,t.production_year,>,2006#1729815
+movie_keyword mk##mk.keyword_id,>,1556#3295557
+title t,movie_companies mc#t.id=mc.movie_id#t.kind_id,<,7,mc.company_id,=,109,mc.company_type_id,<,2#315
+title t,movie_companies mc,movie_info mi#t.id=mc.movie_id,t.id=mi.movie_id#t.kind_id,<,7,t.production_year,<,1990,mc.company_id,<,708,mc.company_type_id,=,1#3031602
+movie_keyword mk##mk.keyword_id,=,196#6516
+title t,movie_info mi,movie_keyword mk#t.id=mi.movie_id,t.id=mk.movie_id#mk.keyword_id,>,3678#135437330
+title t,cast_info ci#t.id=ci.movie_id#t.kind_id,>,1,ci.person_id,=,679131,ci.role_id,<,2#1
+cast_info ci##ci.role_id,<,5#26859641
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#t.kind_id,=,1,mi_idx.info_type_id,=,100#209880
+title t,movie_info mi,movie_info_idx mi_idx#t.id=mi.movie_id,t.id=mi_idx.movie_id#t.production_year,>,1988,mi_idx.info_type_id,>,101#49497
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#t.kind_id,>,4,t.production_year,=,2009#21321
+title t,cast_info ci,movie_info mi#t.id=ci.movie_id,t.id=mi.movie_id#t.kind_id,<,7,ci.person_id,=,988900,mi.info_type_id,=,16#74
+title t,movie_keyword mk#t.id=mk.movie_id#t.production_year,<,2012,mk.keyword_id,>,47402#334246
+title t,movie_info mi#t.id=mi.movie_id#t.production_year,=,1995#199783
+title t,movie_info mi,movie_keyword mk#t.id=mi.movie_id,t.id=mk.movie_id#t.kind_id,<,7,mi.info_type_id,>,7#170617452
+title t,movie_info mi,movie_keyword mk#t.id=mi.movie_id,t.id=mk.movie_id#t.production_year,=,1969#1144558
+movie_companies mc##mc.company_id,=,386,mc.company_type_id,<,2#61
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#t.kind_id,<,7,mi_idx.info_type_id,=,99#318019
+title t,movie_info mi,movie_info_idx mi_idx#t.id=mi.movie_id,t.id=mi_idx.movie_id#t.production_year,>,1984,mi.info_type_id,=,17#561055
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#t.production_year,<,1903,mi_idx.info_type_id,>,100#1683
+movie_keyword mk##mk.keyword_id,>,3365#2576640
+title t,movie_companies mc#t.id=mc.movie_id#mc.company_type_id,=,2#1334883
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#t.kind_id,<,4#854105
+title t,movie_keyword mk#t.id=mk.movie_id#mk.keyword_id,>,1727#3205705
+title t,movie_info_idx mi_idx,movie_keyword mk#t.id=mi_idx.movie_id,t.id=mk.movie_id##10424626
+title t##t.kind_id,=,2,t.production_year,>,2013#86
+title t,movie_info_idx mi_idx,movie_keyword mk#t.id=mi_idx.movie_id,t.id=mk.movie_id#mk.keyword_id,<,53992#9730428
+movie_companies mc##mc.company_id,=,80227#185
+title t,movie_info mi,movie_keyword mk#t.id=mi.movie_id,t.id=mk.movie_id#mi.info_type_id,=,5,mk.keyword_id,=,1118#4287
+title t##t.kind_id,=,1,t.production_year,>,2012#22021
+cast_info ci##ci.person_id,=,3706835,ci.role_id,>,1#183
+movie_companies mc##mc.company_id,<,22189,mc.company_type_id,>,1#559961
+title t,movie_companies mc,movie_info mi#t.id=mc.movie_id,t.id=mi.movie_id#mc.company_type_id,<,2#47903401
+title t,movie_info mi,movie_info_idx mi_idx#t.id=mi.movie_id,t.id=mi_idx.movie_id#t.kind_id,<,7,t.production_year,>,2004,mi.info_type_id,<,17#4059677
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#t.kind_id,<,7,t.production_year,>,1980#700653
+movie_keyword mk##mk.keyword_id,<,19732#3557259
+movie_companies mc##mc.company_id,=,7777,mc.company_type_id,=,1#6
+title t,movie_companies mc,movie_info_idx mi_idx#t.id=mc.movie_id,t.id=mi_idx.movie_id#t.kind_id,<,7,mc.company_id,>,4803#2057684
+movie_keyword mk##mk.keyword_id,=,61147#155
+title t,cast_info ci,movie_info mi#t.id=ci.movie_id,t.id=mi.movie_id#t.kind_id,>,3,t.production_year,=,1977#607411
+title t,movie_companies mc,cast_info ci#t.id=mc.movie_id,t.id=ci.movie_id#t.kind_id,<,2,t.production_year,<,1995,ci.person_id,<,237757,ci.role_id,<,2#1141801
+movie_keyword mk##mk.keyword_id,<,382#520878
+title t,movie_info mi,movie_info_idx mi_idx#t.id=mi.movie_id,t.id=mi_idx.movie_id#mi_idx.info_type_id,>,100#7024362
+title t,cast_info ci,movie_info_idx mi_idx#t.id=ci.movie_id,t.id=mi_idx.movie_id#t.kind_id,=,7#15149568
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#t.kind_id,=,7,t.production_year,>,2007#115854
+title t,movie_companies mc,movie_info_idx mi_idx#t.id=mc.movie_id,t.id=mi_idx.movie_id#mc.company_id,<,176656,mi_idx.info_type_id,>,99#2650917
+cast_info ci##ci.person_id,<,1323260,ci.role_id,=,2#2241
+title t,movie_keyword mk#t.id=mk.movie_id#mk.keyword_id,<,3596#2015322
+title t,movie_info mi,movie_info_idx mi_idx#t.id=mi.movie_id,t.id=mi_idx.movie_id#t.kind_id,<,7#17251286
+title t,movie_info mi,movie_info_idx mi_idx#t.id=mi.movie_id,t.id=mi_idx.movie_id#t.production_year,<,1970#3920666
+title t,movie_info mi,movie_keyword mk#t.id=mi.movie_id,t.id=mk.movie_id#t.production_year,>,1976,mk.keyword_id,<,32207#163807146
+title t,movie_keyword mk#t.id=mk.movie_id#mk.keyword_id,<,2488#1606189
+title t,movie_info_idx mi_idx,movie_keyword mk#t.id=mi_idx.movie_id,t.id=mk.movie_id#t.kind_id,=,7#1107420
+cast_info ci##ci.person_id,<,2453800,ci.role_id,<,5#21202743
+title t,movie_info_idx mi_idx,movie_keyword mk#t.id=mi_idx.movie_id,t.id=mk.movie_id#t.production_year,>,1966,mi_idx.info_type_id,<,100#2784359
+title t,movie_info mi,movie_keyword mk#t.id=mi.movie_id,t.id=mk.movie_id#t.kind_id,<,7,mi.info_type_id,=,16#35032569
+movie_info mi##mi.info_type_id,=,6#474443
+title t,cast_info ci,movie_info_idx mi_idx#t.id=ci.movie_id,t.id=mi_idx.movie_id#t.production_year,<,1915,mi_idx.info_type_id,=,101#22591
+title t,movie_keyword mk#t.id=mk.movie_id#mk.keyword_id,>,31525#581576
+title t,movie_companies mc,movie_info_idx mi_idx#t.id=mc.movie_id,t.id=mi_idx.movie_id#t.kind_id,<,2,mc.company_type_id,=,1#1419114
+title t,cast_info ci,movie_keyword mk#t.id=ci.movie_id,t.id=mk.movie_id#t.kind_id,=,7,t.production_year,<,2009,ci.role_id,<,3#6620361
+title t,movie_keyword mk#t.id=mk.movie_id#t.kind_id,=,7,t.production_year,>,1950#634306
+title t,movie_keyword mk#t.id=mk.movie_id#t.kind_id,=,7,t.production_year,=,2008#41941
+title t,movie_companies mc,movie_info_idx mi_idx#t.id=mc.movie_id,t.id=mi_idx.movie_id#t.kind_id,<,7,t.production_year,<,2004#2019623
+title t,movie_companies mc#t.id=mc.movie_id#t.kind_id,>,1,t.production_year,<,2002,mc.company_id,=,192,mc.company_type_id,<,2#83
+movie_info mi##mi.info_type_id,=,65#6620
+cast_info ci##ci.role_id,>,10#316118
+title t,cast_info ci#t.id=ci.movie_id#t.kind_id,>,1,t.production_year,=,1961,ci.role_id,>,8#5400
+title t,movie_info mi#t.id=mi.movie_id#t.kind_id,=,7,mi.info_type_id,<,8#1388733
+title t##t.kind_id,>,1,t.production_year,>,2007#602533
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#t.kind_id,<,7,t.production_year,>,1989#612556
+title t,movie_info mi#t.id=mi.movie_id#t.production_year,=,1988#127917
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#t.kind_id,<,7,t.production_year,<,2013,mi_idx.info_type_id,=,99#315828
+title t,movie_companies mc#t.id=mc.movie_id#t.kind_id,=,1,mc.company_id,>,11930#792832
+title t##t.kind_id,=,7,t.production_year,=,2013#40120
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#t.kind_id,=,7,t.production_year,>,1990,mi_idx.info_type_id,=,100#103160
+title t,cast_info ci,movie_keyword mk#t.id=ci.movie_id,t.id=mk.movie_id#mk.keyword_id,<,13738#155631205
+title t,movie_info mi,movie_keyword mk#t.id=mi.movie_id,t.id=mk.movie_id#mi.info_type_id,>,1,mk.keyword_id,<,27197#193788159
+movie_keyword mk##mk.keyword_id,<,12321#3161861
+movie_info mi##mi.info_type_id,>,8#6223494
+title t,movie_info mi,movie_keyword mk#t.id=mi.movie_id,t.id=mk.movie_id#mk.keyword_id,=,72112#118
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#mi_idx.info_type_id,<,101#919850
+title t,movie_companies mc,cast_info ci#t.id=mc.movie_id,t.id=ci.movie_id#t.production_year,>,2005#31153282
+title t##t.production_year,<,2008#1671292
+movie_keyword mk##mk.keyword_id,>,4436#2320119
+title t,cast_info ci,movie_info mi#t.id=ci.movie_id,t.id=mi.movie_id#t.production_year,<,1983,ci.role_id,=,3,mi.info_type_id,>,17#731593
+movie_info mi##mi.info_type_id,=,66#6536
+movie_keyword mk##mk.keyword_id,=,16264#58448
+title t,movie_info mi#t.id=mi.movie_id#t.production_year,>,1959#12196589
+title t,movie_companies mc#t.id=mc.movie_id#t.kind_id,<,7,t.production_year,=,2012,mc.company_id,<,47789#41746
+title t,movie_keyword mk#t.id=mk.movie_id#t.kind_id,<,6,t.production_year,=,1952#19643
+title t,movie_info mi,movie_info_idx mi_idx#t.id=mi.movie_id,t.id=mi_idx.movie_id#t.kind_id,<,7,t.production_year,<,1984,mi.info_type_id,<,16#3393339
+title t,movie_companies mc,movie_keyword mk#t.id=mc.movie_id,t.id=mk.movie_id#mc.company_id,>,4599,mk.keyword_id,=,1531#2551
+title t,cast_info ci,movie_info_idx mi_idx#t.id=ci.movie_id,t.id=mi_idx.movie_id#ci.person_id,>,2160118,ci.role_id,>,2,mi_idx.info_type_id,=,99#4183444
+title t,movie_info mi#t.id=mi.movie_id#mi.info_type_id,>,2#12744652
+movie_info mi##mi.info_type_id,>,4#9911754
+title t,movie_companies mc,movie_keyword mk#t.id=mc.movie_id,t.id=mk.movie_id#mc.company_type_id,=,1#26443187
+movie_info mi##mi.info_type_id,<,106#14528932
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#t.kind_id,<,2,t.production_year,>,2010#52590
+title t,movie_keyword mk#t.id=mk.movie_id#t.kind_id,<,7#3878469
+movie_keyword mk##mk.keyword_id,>,270#4190264
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#t.kind_id,<,7,t.production_year,<,1912,mi_idx.info_type_id,<,100#3554
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#t.production_year,=,2000,mi_idx.info_type_id,>,100#11519
+title t,movie_companies mc,movie_keyword mk#t.id=mc.movie_id,t.id=mk.movie_id#mc.company_id,<,27627#28787373
+movie_info mi##mi.info_type_id,>,3#11210743
+title t,cast_info ci,movie_keyword mk#t.id=ci.movie_id,t.id=mk.movie_id#t.kind_id,=,7,t.production_year,<,1951,ci.person_id,<,891747#5137
+title t,cast_info ci,movie_info_idx mi_idx#t.id=ci.movie_id,t.id=mi_idx.movie_id#t.production_year,<,2012,mi_idx.info_type_id,>,101#29758
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#t.production_year,<,2005,mi_idx.info_type_id,=,99#297009
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#t.kind_id,=,2,mi_idx.info_type_id,=,100#37686
+title t##t.kind_id,=,7,t.production_year,<,2005#738761
+title t,movie_companies mc,movie_info_idx mi_idx#t.id=mc.movie_id,t.id=mi_idx.movie_id#t.production_year,<,2003,mi_idx.info_type_id,<,100#782767
+movie_keyword mk##mk.keyword_id,=,57196#16
+title t,cast_info ci#t.id=ci.movie_id#t.kind_id,=,3,t.production_year,>,1950,ci.person_id,<,1100407#629955
+movie_companies mc##mc.company_type_id,>,1#1334883
+title t,movie_companies mc#t.id=mc.movie_id#mc.company_id,>,180873#64017
+movie_keyword mk##mk.keyword_id,=,3329#242
+title t,movie_companies mc#t.id=mc.movie_id#t.kind_id,<,7#1891821
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#mi_idx.info_type_id,=,101#459925
+title t,movie_keyword mk#t.id=mk.movie_id#t.kind_id,<,7,t.production_year,>,2006#821807
+cast_info ci##ci.person_id,>,1343554#22596003
+title t,movie_companies mc#t.id=mc.movie_id#t.production_year,>,1984,mc.company_type_id,=,1#785208
+title t,movie_info_idx mi_idx,movie_keyword mk#t.id=mi_idx.movie_id,t.id=mk.movie_id#mi_idx.info_type_id,=,99,mk.keyword_id,=,623#47
+movie_info mi##mi.info_type_id,=,78#6569
+title t,movie_info mi,movie_info_idx mi_idx#t.id=mi.movie_id,t.id=mi_idx.movie_id#mi_idx.info_type_id,>,101#94028
+title t,movie_info mi#t.id=mi.movie_id#t.kind_id,>,1,t.production_year,>,1936,mi.info_type_id,=,98#157480
+title t,movie_keyword mk#t.id=mk.movie_id#t.production_year,>,2011,mk.keyword_id,>,46001#15578
+title t,movie_companies mc,cast_info ci#t.id=mc.movie_id,t.id=ci.movie_id#t.kind_id,>,6,ci.person_id,>,3688057,ci.role_id,>,2#1956902
+title t,movie_companies mc,movie_info_idx mi_idx#t.id=mc.movie_id,t.id=mi_idx.movie_id#t.kind_id,=,1,t.production_year,>,1990,mc.company_id,>,688,mc.company_type_id,=,2,mi_idx.info_type_id,=,101#180185
+title t,movie_companies mc#t.id=mc.movie_id#mc.company_type_id,=,1#1274246
+movie_keyword mk##mk.keyword_id,<,317#354824
+title t,cast_info ci,movie_info mi#t.id=ci.movie_id,t.id=mi.movie_id##460456073
+movie_keyword mk##mk.keyword_id,=,11764#1358
+title t,movie_companies mc#t.id=mc.movie_id#t.kind_id,<,7,mc.company_id,>,7851#1265982
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#mi_idx.info_type_id,>,100#460185
+title t,cast_info ci,movie_info mi#t.id=ci.movie_id,t.id=mi.movie_id#mi.info_type_id,>,3#395780072
+title t,cast_info ci,movie_keyword mk#t.id=ci.movie_id,t.id=mk.movie_id#t.kind_id,>,1,t.production_year,<,2007,ci.person_id,<,3027877,ci.role_id,>,1#13920265
+movie_info mi##mi.info_type_id,<,2#802140
+title t,cast_info ci#t.id=ci.movie_id#ci.role_id,>,1#23573656
+title t,movie_info mi#t.id=mi.movie_id#t.kind_id,>,1#6534671
+title t##t.production_year,=,2006#108429
+title t,movie_info_idx mi_idx,movie_keyword mk#t.id=mi_idx.movie_id,t.id=mk.movie_id#t.kind_id,=,1,t.production_year,<,2000#4676240
+title t,movie_companies mc,movie_keyword mk#t.id=mc.movie_id,t.id=mk.movie_id#mc.company_id,=,11204,mc.company_type_id,=,2#46
+title t,movie_companies mc,cast_info ci#t.id=mc.movie_id,t.id=ci.movie_id#mc.company_id,>,74156,ci.person_id,>,766186,ci.role_id,>,3#4314652
+title t,cast_info ci,movie_keyword mk#t.id=ci.movie_id,t.id=mk.movie_id#mk.keyword_id,<,866#37964481
+title t,cast_info ci#t.id=ci.movie_id#t.production_year,=,2010,ci.role_id,>,8#448163
+title t,movie_companies mc,cast_info ci#t.id=mc.movie_id,t.id=ci.movie_id#mc.company_id,=,13745,mc.company_type_id,<,2,ci.person_id,>,871358,ci.role_id,<,4#58
+title t,movie_info mi#t.id=mi.movie_id#t.kind_id,<,7,t.production_year,<,2008#8130874
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#t.kind_id,=,7,mi_idx.info_type_id,=,101#141906
+movie_keyword mk##mk.keyword_id,=,2837#2830
+title t,movie_companies mc,movie_keyword mk#t.id=mc.movie_id,t.id=mk.movie_id#t.kind_id,<,7,mc.company_id,<,204051,mk.keyword_id,=,6807#711
+title t,cast_info ci,movie_keyword mk#t.id=ci.movie_id,t.id=mk.movie_id#t.kind_id,>,1,ci.person_id,<,869663#11270024
+title t,movie_companies mc,movie_info_idx mi_idx#t.id=mc.movie_id,t.id=mi_idx.movie_id#mi_idx.info_type_id,<,101#2709766
+title t,movie_companies mc#t.id=mc.movie_id#t.production_year,>,2006,mc.company_id,>,1412,mc.company_type_id,<,2#187580
+movie_companies mc##mc.company_id,<,2609#877826
+movie_keyword mk##mk.keyword_id,=,1114#992
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#t.kind_id,<,2,mi_idx.info_type_id,=,101#209880
+title t,movie_info mi#t.id=mi.movie_id#t.kind_id,=,7,t.production_year,<,2001,mi.info_type_id,<,98#1897688
+title t,movie_companies mc#t.id=mc.movie_id#t.kind_id,=,1,t.production_year,>,1979,mc.company_id,<,67945#519610
+title t,movie_info mi,movie_keyword mk#t.id=mi.movie_id,t.id=mk.movie_id#mk.keyword_id,>,12209#72325742
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#t.production_year,>,2012#14811
+movie_info mi##mi.info_type_id,=,15#598457
+title t,movie_info mi,movie_keyword mk#t.id=mi.movie_id,t.id=mk.movie_id#t.production_year,=,2009,mi.info_type_id,>,16,mk.keyword_id,<,9294#2038596
+title t##t.kind_id,=,3#100537
+movie_keyword mk##mk.keyword_id,<,38340#4060230
+movie_keyword mk##mk.keyword_id,<,3663#2063974
+title t,movie_keyword mk#t.id=mk.movie_id#mk.keyword_id,>,9957#1573499
+movie_companies mc##mc.company_id,<,14541#1541216
+cast_info ci##ci.person_id,=,1224851,ci.role_id,<,10#308
+cast_info ci##ci.person_id,>,950467#26575758
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#t.production_year,>,1991#893460
+title t,movie_info_idx mi_idx,movie_keyword mk#t.id=mi_idx.movie_id,t.id=mk.movie_id#t.kind_id,<,2,t.production_year,<,2002#5024350
+title t,cast_info ci,movie_info mi#t.id=ci.movie_id,t.id=mi.movie_id#t.kind_id,>,2,t.production_year,>,2008,ci.role_id,=,4#1918540
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#t.production_year,<,2000#681292
+title t,movie_info mi#t.id=mi.movie_id#t.kind_id,=,1,t.production_year,<,1992#3906108
+title t,movie_keyword mk#t.id=mk.movie_id#t.kind_id,<,7,t.production_year,>,1995#1992030
+title t,movie_companies mc,movie_info_idx mi_idx#t.id=mc.movie_id,t.id=mi_idx.movie_id#mc.company_type_id,=,1,mi_idx.info_type_id,=,101#770661
+title t,movie_companies mc,movie_info mi#t.id=mc.movie_id,t.id=mi.movie_id#mi.info_type_id,>,2#63034624
+title t,movie_info mi,movie_keyword mk#t.id=mi.movie_id,t.id=mk.movie_id#mi.info_type_id,>,16,mk.keyword_id,=,24382#213761
+title t,movie_keyword mk#t.id=mk.movie_id#t.kind_id,=,1,t.production_year,>,1938#2589352
+title t,movie_companies mc,cast_info ci#t.id=mc.movie_id,t.id=ci.movie_id#mc.company_type_id,=,1#47470011
+title t,cast_info ci,movie_info mi#t.id=ci.movie_id,t.id=mi.movie_id#mi.info_type_id,<,7#127443811
+title t,cast_info ci,movie_info_idx mi_idx#t.id=ci.movie_id,t.id=mi_idx.movie_id#ci.person_id,>,252246,ci.role_id,>,2,mi_idx.info_type_id,=,100#6163366
+title t,cast_info ci,movie_keyword mk#t.id=ci.movie_id,t.id=mk.movie_id#t.production_year,>,2007,ci.person_id,<,1564212,ci.role_id,=,1,mk.keyword_id,=,402#5516
+movie_keyword mk##mk.keyword_id,>,5461#2141525
+title t,movie_companies mc,cast_info ci#t.id=mc.movie_id,t.id=ci.movie_id#t.kind_id,>,2,mc.company_type_id,=,2,ci.person_id,>,3098399#2934910
+movie_companies mc##mc.company_type_id,=,2#1334883
+title t,movie_companies mc,movie_info_idx mi_idx#t.id=mc.movie_id,t.id=mi_idx.movie_id#mc.company_type_id,<,2,mi_idx.info_type_id,<,101#1541322
+title t,movie_companies mc#t.id=mc.movie_id#t.production_year,=,2004#75723
+movie_companies mc##mc.company_id,>,38382,mc.company_type_id,=,1#48706
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#t.kind_id,=,7,t.production_year,<,2009,mi_idx.info_type_id,=,101#109567
+title t,movie_companies mc,movie_info mi#t.id=mc.movie_id,t.id=mi.movie_id#t.kind_id,=,1,t.production_year,<,1975,mi.info_type_id,>,16#3067560
+title t,movie_companies mc#t.id=mc.movie_id#t.kind_id,=,7,mc.company_id,>,27,mc.company_type_id,<,2#216938
+title t,movie_info_idx mi_idx#t.id=mi_idx.movie_id#t.kind_id,<,7,t.production_year,>,2009,mi_idx.info_type_id,<,100#38647
+title t,cast_info ci#t.id=ci.movie_id#t.production_year,>,2005,ci.person_id,>,1410784,ci.role_id,>,2#6195708
+movie_keyword mk##mk.keyword_id,=,53776#21
+title t,movie_companies mc,cast_info ci#t.id=mc.movie_id,t.id=ci.movie_id#mc.company_id,>,92,mc.company_type_id,>,1,ci.role_id,<,9#24716663
+movie_companies mc##mc.company_id,<,57118#1969057
+title t,movie_info mi#t.id=mi.movie_id#mi.info_type_id,<,4#3624977
+title t,movie_info mi#t.id=mi.movie_id#t.production_year,>,2008,mi.info_type_id,=,18#151866
+movie_companies mc##mc.company_id,<,1075#671219
+title t,cast_info ci,movie_info_idx mi_idx#t.id=ci.movie_id,t.id=mi_idx.movie_id#t.kind_id,<,7,t.production_year,<,1995#10436703
+movie_info mi##mi.info_type_id,=,2#1288928
+title t,movie_info mi,movie_info_idx mi_idx#t.id=mi.movie_id,t.id=mi_idx.movie_id#t.production_year,<,1998#10082234
+title t##t.kind_id,=,4#118234
+movie_keyword mk##mk.keyword_id,<,18558#3523966
+movie_keyword mk##mk.keyword_id,<,4228#2173075
+title t,movie_info mi,movie_keyword mk#t.id=mi.movie_id,t.id=mk.movie_id#t.kind_id,<,7,t.production_year,<,1996,mk.keyword_id,>,2375#63254210
+title t,movie_info mi#t.id=mi.movie_id#mi.info_type_id,<,7#5884963
+title t,cast_info ci,movie_info_idx mi_idx#t.id=ci.movie_id,t.id=mi_idx.movie_id#t.kind_id,<,7,t.production_year,<,2012,ci.person_id,=,200377#39
