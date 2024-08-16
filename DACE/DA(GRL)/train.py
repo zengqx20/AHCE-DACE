@@ -153,7 +153,7 @@ def train_and_predict(workload_name, num_queries, num_epochs, batch_size, hid_un
         print("Epoch {}, loss: {}".format(epoch, loss_total / len(train_data_loader)))
 
     timeEnd = time.time()
-    print("训练时间：", timeEnd - timeStart)
+    print("Training time：", timeEnd - timeStart)
 
     # Get final training and validation set predictions
     preds_train, t_total = predict(model, train_data_loader, cuda)
@@ -169,25 +169,24 @@ def train_and_predict(workload_name, num_queries, num_epochs, batch_size, hid_un
 
     # Load test data
     preds_test, t_total = predict(model, test_data_loader, cuda)
-    print("Prediction time per test sample: {}".format(t_total / len(labels_test) * 1000))
+    print("\nPrediction time per test sample: {}".format(t_total / len(labels_test) * 1000))
 
     # Unnormalize
     preds_test_unnorm = unnormalize_labels(preds_test, min_val, max_val)
-
     # Print metrics
-    print("\nQ-Error " + workload_name + ":")
+    print("Q-Error " + workload_name + ":")
     print_qerror(preds_test_unnorm, label)
 
     # Write predictions
-    file_name = "results/predictions" + workload_name + ".csv"
-    os.makedirs(os.path.dirname(file_name), exist_ok=True)
-    with open(file_name, "w") as f:
-        for i in range(len(preds_test_unnorm)):
-            f.write(str(preds_test_unnorm[i]) + "," + label[i] + "\n")
+    # file_name = "results/predictions" + workload_name + ".csv"
+    # os.makedirs(os.path.dirname(file_name), exist_ok=True)
+    # with open(file_name, "w") as f:
+    #     for i in range(len(preds_test_unnorm)):
+    #         f.write(str(preds_test_unnorm[i]) + "," + label[i] + "\n")
 
 
 def main():
-    train_and_predict('job-light', 100, 100, 70, 256, False)
+    train_and_predict('synthetic', 5000, 100, 256, 256, False)
 
 if __name__ == "__main__":
     main()

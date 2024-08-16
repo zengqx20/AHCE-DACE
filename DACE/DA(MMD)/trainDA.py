@@ -188,6 +188,8 @@ def train_and_predict(workload_name, num_queries, num_epochs, batch_size, hid_un
 
             print("Epoch {}, loss: {}".format(epoch_idx, loss / len(train_data_loader)))
 
+    timeEnd = time.time()
+    print("Training time：", timeEnd - timeStart)
     preds_train, t_total = predict(model, train_data_loader, False)
     preds_train_unnorm = unnormalize_labels(preds_train, min_val, max_val)
     labels_train_unnorm = unnormalize_labels(labels_train, min_val, max_val)
@@ -195,18 +197,15 @@ def train_and_predict(workload_name, num_queries, num_epochs, batch_size, hid_un
     print_qerror(preds_train_unnorm, labels_train_unnorm)
 
     preds_test, t_total = predict(model, test_data_loader, False)
-    print("Prediction time per test sample: {}".format(t_total / len(labels_test) * 1000))
+    print("\nPrediction time per test sample: {}".format(t_total / len(labels_test) * 1000))
+    print("Q-Error " + workload_name + ":")
     # Unnormalize
     preds_test_unnorm = unnormalize_labels(preds_test, min_val, max_val)
     # Print metrics
     print_qerror(preds_test_unnorm, label)
-    timeEnd = time.time()
-    print(timeEnd-timeStart)
-
-
 
 def main():
-    train_and_predict('synthetic', 5000, 100, 200, 256, False)
+    train_and_predict('synthetic', 5000, 100, 256, 256, False)
 
 if __name__ == "__main__":
     main()

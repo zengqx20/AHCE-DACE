@@ -2,19 +2,11 @@ import csv
 import torch
 from torch.utils.data import dataset
 
-from util import *
-#from gensim.models import Word2Vec
+from GRL.util import *
+from gensim.models import Word2Vec
 from gensim.models import FastText
 import numpy as np
 
-
-SEED=20
-np.random.seed(SEED)
-torch.manual_seed(SEED)  # 为CPU设置种子用于生成随机数，以使得结果是确定的
-torch.cuda.manual_seed(SEED)  # 为GPU设置随机种子
-torch.cuda.manual_seed_all(SEED)
-torch.backends.cudnn.benchmark = False  # if benchmark=True, deterministic will be False
-torch.backends.cudnn.deterministic = True
 
 def load_data(file_name, num_materialized_samples):
     joins = []
@@ -63,7 +55,7 @@ def load_data(file_name, num_materialized_samples):
 
 
 def load_and_encode_train_data(num_queries, num_materialized_samples):
-    file_name_queries = "workloads/source/scale"
+    file_name_queries = "workloads/source/subtrain-5000"
     file_name_column_min_max_vals = "data/column_min_max_vals.csv"
 
     joins, predicates, tables, samples, label = load_data(file_name_queries, num_materialized_samples)

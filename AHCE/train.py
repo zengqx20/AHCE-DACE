@@ -89,7 +89,7 @@ def print_qerror(preds_unnorm, labels_unnorm):
     squared_error = []
     abs_error = []
     abs_percent_error = []
-    smape_error = []  # 存储SMAPE的分子部分
+    smape_error = []  # SMAPE的分子
 
     for i in range(len(preds_unnorm)):
         if preds_unnorm[i] > float(labels_unnorm[i]):
@@ -116,9 +116,9 @@ def print_qerror(preds_unnorm, labels_unnorm):
     print("Max: {}".format(np.max(qerror)))
     print("Mean: {}".format(np.mean(qerror)))
     print("MSE: {}".format(mse))
-    print("MAE: {}".format(mae))
-    print("MAPE: {}%".format(mape))
-    print("SMAPE: {}%".format(smape))  # 打印SMAPE
+    # print("MAE: {}".format(mae))
+    # print("MAPE: {}%".format(mape))
+    # print("SMAPE: {}%".format(smape))  # Print SMAPE
 
     return qerror, mse, mae, mape, smape
 
@@ -126,7 +126,7 @@ def print_qerror(preds_unnorm, labels_unnorm):
 def train_and_predict(workload_name, num_queries, num_epochs, batch_size, hid_units, cuda):
     # Load training and validation data
     num_materialized_samples = 1000
-    dicts, column_min_max_vals, min_val, max_val, labels_train, labels_test, max_num_joins, max_num_predicates, train_data, test_data = get_train_datasets(
+    dicts, column_min_max_vals, min_val, max_val, labels_train, labels_test1, max_num_joins, max_num_predicates, train_data, test_data = get_train_datasets(
         num_queries, num_materialized_samples)
     table2vec, column2vec, op2vec, join2vec = dicts
 
@@ -208,10 +208,8 @@ def train_and_predict(workload_name, num_queries, num_epochs, batch_size, hid_un
             optimizer.step()
 
         print("Epoch {}, loss: {}".format(epoch, loss_total / len(train_data_loader)))
-
         preds_test, t_total = predict(model, test_data_loader, cuda)
         print("Prediction time per test sample: {}".format(t_total / len(labels_test) * 1000))
-
         # Unnormalize
         preds_test_unnorm = unnormalize_labels(preds_test, min_val, max_val)
 
@@ -224,21 +222,21 @@ def train_and_predict(workload_name, num_queries, num_epochs, batch_size, hid_un
     #np.savez("error/synthetic.npz", array_name=qerror)
 
     timeTrainEnd = time.time()
-    print("Ours模型训练时间为：", timeTrainEnd-timeTrainStart)
+    print("Our model training time：", timeTrainEnd-timeTrainStart)
 
     # Get final training and validation set predictions
     preds_train, t_total = predict(model, train_data_loader, cuda)
     print("Prediction time per training sample: {}".format(t_total / len(labels_train) * 1000))
 
     preds_val, t_total = predict(model, val_data_loader, cuda)
-    print("Prediction time per validation sample: {}".format(t_total / len(labels_test) * 1000))
+    print("Prediction time per validation sample: {}".format(t_total / len(labels_test1) * 1000))
 
     # Unnormalize
     preds_train_unnorm = unnormalize_labels(preds_train, min_val, max_val)
     labels_train_unnorm = unnormalize_labels(labels_train, min_val, max_val)
 
     preds_test_unnorm = unnormalize_labels(preds_val, min_val, max_val)
-    labels_test_unnorm = unnormalize_labels(labels_test, min_val, max_val)
+    labels_test_unnorm = unnormalize_labels(labels_test1, min_val, max_val)
 
     # Print metrics
     print("\nQ-Error training set:")
@@ -248,17 +246,13 @@ def train_and_predict(workload_name, num_queries, num_epochs, batch_size, hid_un
     print_qerror(preds_test_unnorm, labels_test_unnorm)
     print("")
 
-
-
-
-
     # qerror = np.array(qerror)
     # # print(qerror)
     # np.savez("error/job-light.npz", array_name=qerror)
     #
-    # # Write predictions
+    # Write predictions
     # file_name = "results/predictions_" + workload_name + ".csv"
-    # os.makedirs(os.path.dirname(file_name), exist_ok=True)
+    # os.makedirs(os.path.dirname(file_name), exist_xxzok=True)
     # with open(file_name, "w") as f:
     #     for i in range(len(preds_test_unnorm)):
     #         f.write(str(preds_test_unnorm[i]) + "," + label[i] + "\n")
@@ -268,7 +262,7 @@ def train_and_predict(workload_name, num_queries, num_epochs, batch_size, hid_un
 #     parser = argparse.ArgumentParser()
 #     parser.add_argument("testset", help="synthetic, scale, or job-light")
 #     parser.add_argument("--queries", help="number of training queries (default: 10000)", type=int, default=10000)
-#     parser.add_argument("--epochs", help="number of epochs (default: 10)", type=int, default=10)
+#     parser.add_argument("--epochsx x z", help="number of epochs (default: 10)", type=int, default=10)
 #     parser.add_argument("--batch", help="batch size (default: 1024)", type=int, default=1024)
 #     parser.add_argument("--hid", help="number of hidden units (default: 256)", type=int, default=256)
 #     parser.add_argument("--cuda", help="use CUDA", action="store_true")
@@ -277,5 +271,5 @@ def train_and_predict(workload_name, num_queries, num_epochs, batch_size, hid_un
 
 
 if __name__ == "__main__":
-    # 111222333
-    train_and_predict("synthetic", 100000, 100, 256, 256, True)
+
+    train_and_predict("synthetic", 100000, 100, 256, 256, False)

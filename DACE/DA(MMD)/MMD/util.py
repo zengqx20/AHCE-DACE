@@ -1,13 +1,6 @@
 import numpy as np
 import torch
 
-SEED=0
-np.random.seed(SEED)
-torch.manual_seed(SEED)  # 为CPU设置种子用于生成随机数，以使得结果是确定的
-torch.cuda.manual_seed(SEED)  # 为GPU设置随机种子
-torch.cuda.manual_seed_all(SEED)
-torch.backends.cudnn.benchmark = False  # if benchmark=True, deterministic will be False
-torch.backends.cudnn.deterministic = True
 
 # Helper functions for data processing
 

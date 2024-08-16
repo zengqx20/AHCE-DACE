@@ -55,7 +55,7 @@ def predict(model, data_loader, cuda):
             join_masks)
 
         t = time.time()
-        hid, outputs, _ = model(samples, predicates, joins, sample_masks, predicate_masks, join_masks)
+        hid, outputs = model(samples, predicates, joins, sample_masks, predicate_masks, join_masks)
         t_total += time.time() - t
 
         for i in range(outputs.data.shape[0]):
@@ -83,6 +83,7 @@ def print_qerror(preds_unnorm, labels_unnorm):
 
 def train_and_predict(workload_name, num_queries, num_epochs, batch_size, hid_units, cuda):
     # Load training and validation data
+    timeStart = time.time()
     num_materialized_samples = 1000
     dicts, column_min_max_vals, min_val, max_val, labels_train, max_num_joins, max_num_predicates, train_data = get_train_datasets(
         num_queries, num_materialized_samples)
@@ -103,7 +104,7 @@ def train_and_predict(workload_name, num_queries, num_epochs, batch_size, hid_un
     if cuda:
         model.cuda()
 
-    file_name = "workloads/" + workload_name
+    file_name = "workloads/target/" + workload_name
     joins, predicates, tables, samples, label = load_data(file_name, num_materialized_samples)
 
     # Get feature encoding and proper normalization
@@ -142,14 +143,15 @@ def train_and_predict(workload_name, num_queries, num_epochs, batch_size, hid_un
                 join_masks)
 
             optimizer.zero_grad()
-            hid, outputs, _ = model(samples, predicates, joins, sample_masks, predicate_masks, join_masks, grl_lambda=1.0)
+            hid, outputs = model(samples, predicates, joins, sample_masks, predicate_masks, join_masks)
             loss = qerror_loss(outputs, targets.float(), min_val, max_val)
             loss_total += loss.item()
             loss.backward()
             optimizer.step()
 
         print("Epoch {}, loss: {}".format(epoch, loss_total / len(train_data_loader)))
-
+    timeEnd = time.time()
+    print("Training time：", timeEnd - timeStart)
     # Get final training and validation set predictions
     preds_train, t_total = predict(model, train_data_loader, cuda)
     print("Prediction time per training sample: {}".format(t_total / len(labels_train) * 1000))
@@ -174,16 +176,16 @@ def train_and_predict(workload_name, num_queries, num_epochs, batch_size, hid_un
     print_qerror(preds_test_unnorm, label)
 
     # Write predictions
-    file_name = "results/predictions" + workload_name + ".csv"
-    os.makedirs(os.path.dirname(file_name), exist_ok=True)
-    with open(file_name, "w") as f:
-        for i in range(len(preds_test_unnorm)):
-            f.write(str(preds_test_unnorm[i]) + "," + label[i] + "\n")
+    # file_name = "results/predictions" + workload_name + ".csv"
+    # os.makedirs(os.path.dirname(file_name), exist_ok=True)
+    # with open(file_name, "w") as f:
+    #     for i in range(len(preds_test_unnorm)):
+    #         f.write(str(preds_test_unnorm[i]) + "," + label[i] + "\n")
 
 
 
 def main():
-    train_and_predict('synthetic', 5000, 100, 100, 256, False)
+    train_and_predict('synthetic', 5000, 100, 256, 256, False)
 
 
 if __name__ == "__main__":
