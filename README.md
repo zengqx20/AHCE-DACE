@@ -74,9 +74,11 @@ python get_cardinality_estimate_actual.py
 
 ## Code References:
 
+- LW-NN/XGB: https://github.com/jt-zhang/CardinalityEstimationTestbed
 - MSCN: https://github.com/andreaskipf/learnedcardinalities
-- DANN: https://github.com/zengjichuan/DANN
+- NNGP: https://github.com/Kangfei/NNGP-src
 - DeepDB: https://github.com/DataManagementLab/deepdb-public
 - NeuroCard: https://github.com/neurocard/neurocard
-- CEDA(Our Demo): https://github.com/Donny-350/CEDA
+- UAE: https://github.com/pagegitss/UAE
+- DANN: https://github.com/zengjichuan/DANN
 
